@@ -16,6 +16,50 @@ npx nypm install packageName
 
 ```
 
+Create a client:
+
+```ts
+import { createCapawesomeClient } from "packageName";
+
+const client = createCapawesomeClient({
+  token: process.env.CAPAWESOME_TOKEN,
+});
+```
+
+Call endpoints with typed `path`, `query`, and `body` options inferred from the
+OpenAPI-generated types in `src/types/capawesome.ts`:
+
+```ts
+const apps = await client.get("/v1/apps", {
+  query: { limit: "20" },
+});
+
+await client.post("/v1/apps/{appId}/channels", {
+  path: { appId: "app_123" },
+  body: { name: "production" },
+});
+```
+
+Responses currently default to `unknown` because the generated OpenAPI operation
+types expose `responses: never`. You can provide a response type when you call
+the client:
+
+```ts
+const app = await client.get<{ data: { id: string; name: string } }>("/v1/apps/{appId}", {
+  path: { appId: "app_123" },
+});
+```
+
+You can also use the generic `request` method if you prefer passing an explicit
+HTTP method:
+
+```ts
+const builds = await client.request("get", "/v1/apps/{appId}/builds", {
+  path: { appId: "app_123" },
+  query: { limit: "10" },
+});
+```
+
 ## Development
 
 <details>
