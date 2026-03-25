@@ -17,7 +17,7 @@
     "build": "obuild",
     "dev": "vitest dev",
     "fmt": "automd && oxlint . --fix && oxfmt .",
-    "generate:types": "openapi-typescript https://api.cloud.capawesome.io/openapi -o src/types/capawesome.ts",
+    "generate:types": "openapi-typescript https://api.cloud.capawesome.io/openapi -o src/types/capawesome.ts && oxfmt src/types/capawesome.ts",
     "lint": "oxlint . && oxfmt --check .",
     "prepack": "pnpm build",
     "release": "pnpm test && pnpm build && changelogen --release && npm publish && git push --follow-tags",

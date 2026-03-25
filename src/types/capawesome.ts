@@ -4,1886 +4,1910 @@
  */
 
 export interface paths {
-    "/v1/apps/{appId}/automations": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app automations. */
-        get: operations["getV1AppsByAppIdAutomations"];
-        put?: never;
-        /** @description Create a new app automation. */
-        post: operations["postV1AppsByAppIdAutomations"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+  "/v1/apps/{appId}/automations": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/automations/count": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get: operations["getV1AppsByAppIdAutomationsCount"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app automations. */
+    get: operations["getV1AppsByAppIdAutomations"];
+    put?: never;
+    /** @description Create a new app automation. */
+    post: operations["postV1AppsByAppIdAutomations"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/automations/count": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/automations/{automationId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app automation by id. */
-        get: operations["getV1AppsByAppIdAutomationsByAutomationId"];
-        put?: never;
-        post?: never;
-        /** @description Delete an app automation. */
-        delete: operations["deleteV1AppsByAppIdAutomationsByAutomationId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app automation. */
-        patch: operations["patchV1AppsByAppIdAutomationsByAutomationId"];
-        trace?: never;
+    get: operations["getV1AppsByAppIdAutomationsCount"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/automations/{automationId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/build-sources/{buildSourceId}/download": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Download an app build source. */
-        get: operations["getV1AppsByAppIdBuild-sourcesByBuildSourceIdDownload"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app automation by id. */
+    get: operations["getV1AppsByAppIdAutomationsByAutomationId"];
+    put?: never;
+    post?: never;
+    /** @description Delete an app automation. */
+    delete: operations["deleteV1AppsByAppIdAutomationsByAutomationId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app automation. */
+    patch: operations["patchV1AppsByAppIdAutomationsByAutomationId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/build-sources/{buildSourceId}/download": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/build-sources": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        /** @description Create a new app build source. */
-        post: operations["postV1AppsByAppIdBuild-sources"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Download an app build source. */
+    get: operations["getV1AppsByAppIdBuild-sourcesByBuildSourceIdDownload"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/build-sources": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/builds/{buildId}/artifacts/{artifactId}/download": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Download an app build artifact. */
-        get: operations["getV1AppsByAppIdBuildsByBuildIdArtifactsByArtifactIdDownload"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get?: never;
+    put?: never;
+    /** @description Create a new app build source. */
+    post: operations["postV1AppsByAppIdBuild-sources"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/builds/{buildId}/artifacts/{artifactId}/download": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/builds/{buildId}/artifacts": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app build artifacts. */
-        get: operations["getV1AppsByAppIdBuildsByBuildIdArtifacts"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Download an app build artifact. */
+    get: operations["getV1AppsByAppIdBuildsByBuildIdArtifactsByArtifactIdDownload"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/builds/{buildId}/artifacts": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/builds": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app builds. */
-        get: operations["getV1AppsByAppIdBuilds"];
-        put?: never;
-        /** @description Create a new app build. */
-        post: operations["postV1AppsByAppIdBuilds"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app build artifacts. */
+    get: operations["getV1AppsByAppIdBuildsByBuildIdArtifacts"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/builds": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/builds/{buildId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app build by id. */
-        get: operations["getV1AppsByAppIdBuildsByBuildId"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        /** @description Update an app build. */
-        patch: operations["patchV1AppsByAppIdBuildsByBuildId"];
-        trace?: never;
+    /** @description Get app builds. */
+    get: operations["getV1AppsByAppIdBuilds"];
+    put?: never;
+    /** @description Create a new app build. */
+    post: operations["postV1AppsByAppIdBuilds"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/builds/{buildId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/bundles/latest": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get the latest app bundle for a device. */
-        get: operations["getV1AppsByAppIdBundlesLatest"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app build by id. */
+    get: operations["getV1AppsByAppIdBuildsByBuildId"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    /** @description Update an app build. */
+    patch: operations["patchV1AppsByAppIdBuildsByBuildId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/bundles/latest": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/bundles/{bundleId}/download": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Download an app bundle or a file from an app bundle. */
-        get: operations["getV1AppsByAppIdBundlesByBundleIdDownload"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get the latest app bundle for a device. */
+    get: operations["getV1AppsByAppIdBundlesLatest"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/bundles/{bundleId}/download": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/certificates": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app certificates. */
-        get: operations["getV1AppsByAppIdCertificates"];
-        put?: never;
-        /** @description Create a new app certificate. */
-        post: operations["postV1AppsByAppIdCertificates"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Download an app bundle or a file from an app bundle. */
+    get: operations["getV1AppsByAppIdBundlesByBundleIdDownload"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/certificates": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/certificates/{certificateId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app certificate by id. */
-        get: operations["getV1AppsByAppIdCertificatesByCertificateId"];
-        put?: never;
-        post?: never;
-        /** @description Delete an app certificate. */
-        delete: operations["deleteV1AppsByAppIdCertificatesByCertificateId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app certificate. */
-        patch: operations["patchV1AppsByAppIdCertificatesByCertificateId"];
-        trace?: never;
+    /** @description Get app certificates. */
+    get: operations["getV1AppsByAppIdCertificates"];
+    put?: never;
+    /** @description Create a new app certificate. */
+    post: operations["postV1AppsByAppIdCertificates"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/certificates/{certificateId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/channels": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app channels. */
-        get: operations["getV1AppsByAppIdChannels"];
-        put?: never;
-        /** @description Create a new app channel. */
-        post: operations["postV1AppsByAppIdChannels"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app certificate by id. */
+    get: operations["getV1AppsByAppIdCertificatesByCertificateId"];
+    put?: never;
+    post?: never;
+    /** @description Delete an app certificate. */
+    delete: operations["deleteV1AppsByAppIdCertificatesByCertificateId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app certificate. */
+    patch: operations["patchV1AppsByAppIdCertificatesByCertificateId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/channels": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/channels/{channelId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app channel by id. */
-        get: operations["getV1AppsByAppIdChannelsByChannelId"];
-        put?: never;
-        post?: never;
-        /** @description Delete an app channel. */
-        delete: operations["deleteV1AppsByAppIdChannelsByChannelId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app channel. */
-        patch: operations["patchV1AppsByAppIdChannelsByChannelId"];
-        trace?: never;
+    /** @description Get app channels. */
+    get: operations["getV1AppsByAppIdChannels"];
+    put?: never;
+    /** @description Create a new app channel. */
+    post: operations["postV1AppsByAppIdChannels"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/channels/{channelId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/channels/{channelId}/pause": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        /** @description Pause an app channel. */
-        post: operations["postV1AppsByAppIdChannelsByChannelIdPause"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app channel by id. */
+    get: operations["getV1AppsByAppIdChannelsByChannelId"];
+    put?: never;
+    post?: never;
+    /** @description Delete an app channel. */
+    delete: operations["deleteV1AppsByAppIdChannelsByChannelId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app channel. */
+    patch: operations["patchV1AppsByAppIdChannelsByChannelId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/channels/{channelId}/pause": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/channels/{channelId}/resume": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        /** @description Resume a paused app channel. */
-        post: operations["postV1AppsByAppIdChannelsByChannelIdResume"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get?: never;
+    put?: never;
+    /** @description Pause an app channel. */
+    post: operations["postV1AppsByAppIdChannelsByChannelIdPause"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/channels/{channelId}/resume": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/deployments": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app deployments. */
-        get: operations["getV1AppsByAppIdDeployments"];
-        put?: never;
-        /** @description Create a new app deployment. */
-        post: operations["postV1AppsByAppIdDeployments"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get?: never;
+    put?: never;
+    /** @description Resume a paused app channel. */
+    post: operations["postV1AppsByAppIdChannelsByChannelIdResume"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/deployments": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/deployments/{deploymentId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app deployment by id. */
-        get: operations["getV1AppsByAppIdDeploymentsByDeploymentId"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        /** @description Update an app deployment. */
-        patch: operations["patchV1AppsByAppIdDeploymentsByDeploymentId"];
-        trace?: never;
+    /** @description Get app deployments. */
+    get: operations["getV1AppsByAppIdDeployments"];
+    put?: never;
+    /** @description Create a new app deployment. */
+    post: operations["postV1AppsByAppIdDeployments"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/deployments/{deploymentId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/destinations": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app destinations. */
-        get: operations["getV1AppsByAppIdDestinations"];
-        put?: never;
-        /** @description Create a new app destination. */
-        post: operations["postV1AppsByAppIdDestinations"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app deployment by id. */
+    get: operations["getV1AppsByAppIdDeploymentsByDeploymentId"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    /** @description Update an app deployment. */
+    patch: operations["patchV1AppsByAppIdDeploymentsByDeploymentId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/destinations": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/destinations/{destinationId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app destination by id. */
-        get: operations["getV1AppsByAppIdDestinationsByDestinationId"];
-        put?: never;
-        post?: never;
-        /** @description Delete an app destination. */
-        delete: operations["deleteV1AppsByAppIdDestinationsByDestinationId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app destination. */
-        patch: operations["patchV1AppsByAppIdDestinationsByDestinationId"];
-        trace?: never;
+    /** @description Get app destinations. */
+    get: operations["getV1AppsByAppIdDestinations"];
+    put?: never;
+    /** @description Create a new app destination. */
+    post: operations["postV1AppsByAppIdDestinations"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/destinations/{destinationId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/devices": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app devices. */
-        get: operations["getV1AppsByAppIdDevices"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app destination by id. */
+    get: operations["getV1AppsByAppIdDestinationsByDestinationId"];
+    put?: never;
+    post?: never;
+    /** @description Delete an app destination. */
+    delete: operations["deleteV1AppsByAppIdDestinationsByDestinationId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app destination. */
+    patch: operations["patchV1AppsByAppIdDestinationsByDestinationId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/devices": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/devices/{deviceId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app device by id. */
-        get: operations["getV1AppsByAppIdDevicesByDeviceId"];
-        put?: never;
-        post?: never;
-        /** @description Delete an app device. */
-        delete: operations["deleteV1AppsByAppIdDevicesByDeviceId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app device. */
-        patch: operations["patchV1AppsByAppIdDevicesByDeviceId"];
-        trace?: never;
+    /** @description Get app devices. */
+    get: operations["getV1AppsByAppIdDevices"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/devices/{deviceId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/environments/{environmentId}/secrets": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app environment secrets. */
-        get: operations["getV1AppsByAppIdEnvironmentsByEnvironmentIdSecrets"];
-        put?: never;
-        /** @description Create a new app environment secret. */
-        post: operations["postV1AppsByAppIdEnvironmentsByEnvironmentIdSecrets"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app device by id. */
+    get: operations["getV1AppsByAppIdDevicesByDeviceId"];
+    put?: never;
+    post?: never;
+    /** @description Delete an app device. */
+    delete: operations["deleteV1AppsByAppIdDevicesByDeviceId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app device. */
+    patch: operations["patchV1AppsByAppIdDevicesByDeviceId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/environments/{environmentId}/secrets": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/environments/{environmentId}/secrets/{secretId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post?: never;
-        /** @description Delete an app environment secret. */
-        delete: operations["deleteV1AppsByAppIdEnvironmentsByEnvironmentIdSecretsBySecretId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app environment secret. */
-        patch: operations["patchV1AppsByAppIdEnvironmentsByEnvironmentIdSecretsBySecretId"];
-        trace?: never;
+    /** @description Get app environment secrets. */
+    get: operations["getV1AppsByAppIdEnvironmentsByEnvironmentIdSecrets"];
+    put?: never;
+    /** @description Create a new app environment secret. */
+    post: operations["postV1AppsByAppIdEnvironmentsByEnvironmentIdSecrets"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/environments/{environmentId}/secrets/{secretId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/environments/{environmentId}/variables": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app environment variables. */
-        get: operations["getV1AppsByAppIdEnvironmentsByEnvironmentIdVariables"];
-        put?: never;
-        /** @description Create a new app environment variable. */
-        post: operations["postV1AppsByAppIdEnvironmentsByEnvironmentIdVariables"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get?: never;
+    put?: never;
+    post?: never;
+    /** @description Delete an app environment secret. */
+    delete: operations["deleteV1AppsByAppIdEnvironmentsByEnvironmentIdSecretsBySecretId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app environment secret. */
+    patch: operations["patchV1AppsByAppIdEnvironmentsByEnvironmentIdSecretsBySecretId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/environments/{environmentId}/variables": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/environments/{environmentId}/variables/{variableId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        post?: never;
-        /** @description Delete an app environment variable. */
-        delete: operations["deleteV1AppsByAppIdEnvironmentsByEnvironmentIdVariablesByVariableId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app environment variable. */
-        patch: operations["patchV1AppsByAppIdEnvironmentsByEnvironmentIdVariablesByVariableId"];
-        trace?: never;
+    /** @description Get app environment variables. */
+    get: operations["getV1AppsByAppIdEnvironmentsByEnvironmentIdVariables"];
+    put?: never;
+    /** @description Create a new app environment variable. */
+    post: operations["postV1AppsByAppIdEnvironmentsByEnvironmentIdVariables"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/environments/{environmentId}/variables/{variableId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/environments": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app environments. */
-        get: operations["getV1AppsByAppIdEnvironments"];
-        put?: never;
-        /** @description Create a new app environment. */
-        post: operations["postV1AppsByAppIdEnvironments"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get?: never;
+    put?: never;
+    post?: never;
+    /** @description Delete an app environment variable. */
+    delete: operations["deleteV1AppsByAppIdEnvironmentsByEnvironmentIdVariablesByVariableId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app environment variable. */
+    patch: operations["patchV1AppsByAppIdEnvironmentsByEnvironmentIdVariablesByVariableId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/environments": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/environments/{environmentId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app environment by id. */
-        get: operations["getV1AppsByAppIdEnvironmentsByEnvironmentId"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        /** @description Update an app environment. */
-        patch: operations["patchV1AppsByAppIdEnvironmentsByEnvironmentId"];
-        trace?: never;
+    /** @description Get app environments. */
+    get: operations["getV1AppsByAppIdEnvironments"];
+    put?: never;
+    /** @description Create a new app environment. */
+    post: operations["postV1AppsByAppIdEnvironments"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/environments/{environmentId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/transfer": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        get?: never;
-        put?: never;
-        /** @description Transfer an app to another organization. */
-        post: operations["postV1AppsByAppIdTransfer"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app environment by id. */
+    get: operations["getV1AppsByAppIdEnvironmentsByEnvironmentId"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    /** @description Update an app environment. */
+    patch: operations["patchV1AppsByAppIdEnvironmentsByEnvironmentId"];
+    trace?: never;
+  };
+  "/v1/apps/{appId}/transfer": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/webhooks": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description List app webhooks. */
-        get: operations["getV1AppsByAppIdWebhooks"];
-        put?: never;
-        /** @description Create a new app webhook. */
-        post: operations["postV1AppsByAppIdWebhooks"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    get?: never;
+    put?: never;
+    /** @description Transfer an app to another organization. */
+    post: operations["postV1AppsByAppIdTransfer"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/webhooks": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}/webhooks/{webhookId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app webhook by id. */
-        get: operations["getV1AppsByAppIdWebhooksByWebhookId"];
-        put?: never;
-        post?: never;
-        /** @description Delete an app webhook. */
-        delete: operations["deleteV1AppsByAppIdWebhooksByWebhookId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app webhook. */
-        patch: operations["patchV1AppsByAppIdWebhooksByWebhookId"];
-        trace?: never;
+    /** @description List app webhooks. */
+    get: operations["getV1AppsByAppIdWebhooks"];
+    put?: never;
+    /** @description Create a new app webhook. */
+    post: operations["postV1AppsByAppIdWebhooks"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}/webhooks/{webhookId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get apps. */
-        get: operations["getV1Apps"];
-        put?: never;
-        /** @description Create a new app. */
-        post: operations["postV1Apps"];
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app webhook by id. */
+    get: operations["getV1AppsByAppIdWebhooksByWebhookId"];
+    put?: never;
+    post?: never;
+    /** @description Delete an app webhook. */
+    delete: operations["deleteV1AppsByAppIdWebhooksByWebhookId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app webhook. */
+    patch: operations["patchV1AppsByAppIdWebhooksByWebhookId"];
+    trace?: never;
+  };
+  "/v1/apps": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/apps/{appId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get app by id. */
-        get: operations["getV1AppsByAppId"];
-        put?: never;
-        post?: never;
-        /** @description Delete an app. */
-        delete: operations["deleteV1AppsByAppId"];
-        options?: never;
-        head?: never;
-        /** @description Update an app. */
-        patch: operations["patchV1AppsByAppId"];
-        trace?: never;
+    /** @description Get apps. */
+    get: operations["getV1Apps"];
+    put?: never;
+    /** @description Create a new app. */
+    post: operations["postV1Apps"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/apps/{appId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/jobs/{jobId}/logs": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get job logs. */
-        get: operations["getV1JobsByJobIdLogs"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get app by id. */
+    get: operations["getV1AppsByAppId"];
+    put?: never;
+    post?: never;
+    /** @description Delete an app. */
+    delete: operations["deleteV1AppsByAppId"];
+    options?: never;
+    head?: never;
+    /** @description Update an app. */
+    patch: operations["patchV1AppsByAppId"];
+    trace?: never;
+  };
+  "/v1/jobs/{jobId}/logs": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
-    "/v1/jobs/{jobId}": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        /** @description Get job by id. */
-        get: operations["getV1JobsByJobId"];
-        put?: never;
-        post?: never;
-        delete?: never;
-        options?: never;
-        head?: never;
-        patch?: never;
-        trace?: never;
+    /** @description Get job logs. */
+    get: operations["getV1JobsByJobIdLogs"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/jobs/{jobId}": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
     };
+    /** @description Get job by id. */
+    get: operations["getV1JobsByJobId"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
 }
 export type webhooks = Record<string, never>;
 export interface components {
-    schemas: never;
-    responses: never;
-    parameters: never;
-    requestBodies: never;
-    headers: never;
-    pathItems: never;
+  schemas: never;
+  responses: never;
+  parameters: never;
+  requestBodies: never;
+  headers: never;
+  pathItems: never;
 }
 export type $defs = Record<string, never>;
 export interface operations {
-    getV1AppsByAppIdAutomations: {
-        parameters: {
-            query?: {
-                limit?: string;
-                offset?: string;
-                platform?: "android" | "ios" | "web";
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdAutomations: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    /** Format: uuid */
-                    appCertificateId?: string | null;
-                    /** Format: uuid */
-                    appChannelId?: string | null;
-                    /** Format: uuid */
-                    appDestinationId?: string | null;
-                    /** Format: uuid */
-                    appEnvironmentId?: string | null;
-                    /** @enum {string|null} */
-                    buildStack?: "macos-sequoia" | "macos-tahoe" | null;
-                    /** @enum {string|null} */
-                    buildType?: "app-store" | "ad-hoc" | "debug" | "development" | "release" | "simulator" | null;
-                    commitMessagePattern?: string | null;
-                    name: string;
-                    /** @enum {string} */
-                    platform: "android" | "ios" | "web";
-                    triggerPattern?: string | null;
-                    /** @enum {string} */
-                    triggerType: "branch" | "tag";
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdAutomationsCount: {
-        parameters: {
-            query?: {
-                platform?: "android" | "ios" | "web";
-                query?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    getV1AppsByAppIdAutomationsByAutomationId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                automationId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    deleteV1AppsByAppIdAutomationsByAutomationId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                automationId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdAutomationsByAutomationId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                automationId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    /** Format: uuid */
-                    appCertificateId?: string | null;
-                    /** Format: uuid */
-                    appChannelId?: string | null;
-                    /** Format: uuid */
-                    appDestinationId?: string | null;
-                    /** Format: uuid */
-                    appEnvironmentId?: string | null;
-                    /** @enum {string|null} */
-                    buildStack?: "macos-sequoia" | "macos-tahoe" | null;
-                    /** @enum {string|null} */
-                    buildType?: "app-store" | "ad-hoc" | "debug" | "development" | "release" | "simulator" | null;
-                    commitMessagePattern?: string | null;
-                    enabled?: boolean;
-                    name?: string;
-                    /** @enum {string} */
-                    platform?: "android" | "ios" | "web";
-                    triggerPattern?: string | null;
-                    /** @enum {string} */
-                    triggerType?: "branch" | "tag";
-                };
-            };
-        };
-        responses: never;
-    };
-    "getV1AppsByAppIdBuild-sourcesByBuildSourceIdDownload": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                buildSourceId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    "postV1AppsByAppIdBuild-sources": {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    fileSizeInBytes?: number | null;
-                    /** Format: uri */
-                    fileUrl?: string | null;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdBuildsByBuildIdArtifactsByArtifactIdDownload: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                buildId: string;
-                artifactId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    getV1AppsByAppIdBuildsByBuildIdArtifacts: {
-        parameters: {
-            query?: {
-                limit?: string;
-                offset?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                buildId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    getV1AppsByAppIdBuilds: {
-        parameters: {
-            query?: {
-                appAutomationId?: string;
-                limit?: string;
-                offset?: string;
-                numberAsString?: string;
-                platform?: "android" | "ios" | "web";
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdBuilds: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    adHocEnvironmentVariables?: {
-                        [key: string]: string;
-                    } | null;
-                    appBuildSourceId?: string | null;
-                    appCertificateId?: string | null;
-                    appCertificateName?: string | null;
-                    appEnvironmentId?: string | null;
-                    appEnvironmentName?: string | null;
-                    gitRef?: string | null;
-                    /** @enum {string} */
-                    platform: "android" | "ios" | "web";
-                    /**
-                     * @default macos-tahoe
-                     * @enum {string}
-                     */
-                    stack?: "macos-sequoia" | "macos-tahoe";
-                    /** @enum {string|null} */
-                    type?: "app-store" | "ad-hoc" | "debug" | "development" | "release" | "simulator" | null;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdBuildsByBuildId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                buildId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdBuildsByBuildId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                buildId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    customProperties?: {
-                        [key: string]: string;
-                    } | null;
-                    eqAndroidAppVersionCode?: string | null;
-                    eqIosAppVersionCode?: string | null;
-                    maxAndroidAppVersionCode?: string | null;
-                    maxIosAppVersionCode?: string | null;
-                    minAndroidAppVersionCode?: string | null;
-                    minIosAppVersionCode?: string | null;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdBundlesLatest: {
-        parameters: {
-            query: {
-                appVersionCode: string;
-                appVersionName: string;
-                bundleId?: string;
-                channelName?: string;
-                customId?: string;
-                deviceId: string;
-                osVersion: string;
-                platform: string;
-                pluginVersion: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    getV1AppsByAppIdBundlesByBundleIdDownload: {
-        parameters: {
-            query?: {
-                href?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                bundleId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    getV1AppsByAppIdCertificates: {
-        parameters: {
-            query?: {
-                limit?: string;
-                name?: string;
-                offset?: string;
-                platform?: "android" | "ios" | "web";
-                type?: "development" | "production";
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdCertificates: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/x-www-form-urlencoded": {
-                    file: unknown;
-                    keyAlias?: string;
-                    keyPassword?: string;
-                    name: string;
-                    password?: string;
-                    /** @enum {string} */
-                    platform: "android" | "ios" | "web";
-                    /** @enum {string} */
-                    type?: "development" | "production";
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdCertificatesByCertificateId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                certificateId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    deleteV1AppsByAppIdCertificatesByCertificateId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                certificateId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdCertificatesByCertificateId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                certificateId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    keyAlias?: string | null;
-                    keyPassword?: string | null;
-                    name?: string;
-                    password?: string;
-                    /** @enum {string} */
-                    type?: "development" | "production";
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdChannels: {
-        parameters: {
-            query?: {
-                limit?: string;
-                name?: string;
-                offset?: string;
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdChannels: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    expiresAt?: string | number | null;
-                    name: string;
-                    protected?: boolean;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdChannelsByChannelId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                channelId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    deleteV1AppsByAppIdChannelsByChannelId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                channelId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdChannelsByChannelId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                channelId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    expiresAt?: string | number | null;
-                    name?: string;
-                    protected?: boolean;
-                };
-            };
-        };
-        responses: never;
-    };
-    postV1AppsByAppIdChannelsByChannelIdPause: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                channelId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdChannelsByChannelIdResume: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                channelId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    getV1AppsByAppIdDeployments: {
-        parameters: {
-            query?: {
-                appBuildId?: string;
-                appChannelId?: string;
-                appDestinationId?: string;
-                limit?: string;
-                offset?: string;
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdDeployments: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    appBuildId: string;
-                    appChannelId?: string | null;
-                    appChannelName?: string | null;
-                    appDestinationId?: string | null;
-                    appDestinationName?: string | null;
-                    rolloutPercentage?: number | null;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdDeploymentsByDeploymentId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                deploymentId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdDeploymentsByDeploymentId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                deploymentId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    rolloutPercentage: number;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdDestinations: {
-        parameters: {
-            query?: {
-                limit?: string;
-                name?: string;
-                offset?: string;
-                platform?: "android" | "ios";
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdDestinations: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    /**
-                     * @default aab
-                     * @enum {string}
-                     */
-                    androidBuildArtifactType?: "aab" | "apk";
-                    androidPackageName?: string | null;
-                    /**
-                     * @default draft
-                     * @enum {string}
-                     */
-                    androidReleaseStatus?: "completed" | "draft";
-                    appAppleApiKeyId?: string | null;
-                    appGoogleServiceAccountKeyId?: string | null;
-                    appleApiKeyId?: string | null;
-                    appleIssuerId?: string | null;
-                    appleId?: string | null;
-                    appleAppPassword?: string | null;
-                    appleAppId?: string | null;
-                    appleTeamId?: string | null;
-                    /** @enum {string|null} */
-                    googlePlayTrack?: "internal" | "alpha" | "beta" | "production" | null;
-                    name: string;
-                    /** @enum {string} */
-                    platform: "android" | "ios";
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdDestinationsByDestinationId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                destinationId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    deleteV1AppsByAppIdDestinationsByDestinationId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                destinationId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdDestinationsByDestinationId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                destinationId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    /** @enum {string} */
-                    androidBuildArtifactType?: "aab" | "apk";
-                    androidPackageName?: string | null;
-                    /** @enum {string} */
-                    androidReleaseStatus?: "completed" | "draft";
-                    appAppleApiKeyId?: string | null;
-                    appGoogleServiceAccountKeyId?: string | null;
-                    appleApiKeyId?: string | null;
-                    appleIssuerId?: string | null;
-                    appleId?: string | null;
-                    appleAppPassword?: string | null;
-                    appleAppId?: string | null;
-                    appleTeamId?: string | null;
-                    /** @enum {string|null} */
-                    googlePlayTrack?: "internal" | "alpha" | "beta" | "production" | null;
-                    name?: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdDevices: {
-        parameters: {
-            query?: {
-                id?: string;
-                limit?: string;
-                offset?: string;
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    getV1AppsByAppIdDevicesByDeviceId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                deviceId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    deleteV1AppsByAppIdDevicesByDeviceId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                deviceId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdDevicesByDeviceId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                deviceId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    /** Format: uuid */
-                    forcedAppChannelId?: string | null;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdEnvironmentsByEnvironmentIdSecrets: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdEnvironmentsByEnvironmentIdSecrets: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    key: string;
-                    value: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    deleteV1AppsByAppIdEnvironmentsByEnvironmentIdSecretsBySecretId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-                secretId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdEnvironmentsByEnvironmentIdSecretsBySecretId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-                secretId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    key?: string;
-                    value?: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdEnvironmentsByEnvironmentIdVariables: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdEnvironmentsByEnvironmentIdVariables: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    key: string;
-                    value: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    deleteV1AppsByAppIdEnvironmentsByEnvironmentIdVariablesByVariableId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-                variableId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdEnvironmentsByEnvironmentIdVariablesByVariableId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-                variableId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    key?: string;
-                    value?: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdEnvironments: {
-        parameters: {
-            query?: {
-                limit?: string;
-                offset?: string;
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdEnvironments: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    name: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdEnvironmentsByEnvironmentId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdEnvironmentsByEnvironmentId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                environmentId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    name?: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    postV1AppsByAppIdTransfer: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    targetOrganizationId: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdWebhooks: {
-        parameters: {
-            query?: {
-                limit?: string;
-                offset?: string;
-                query?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1AppsByAppIdWebhooks: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    name: string;
-                    signingSecret?: string;
-                    /** Format: uri */
-                    url: string;
-                    events: ("app_build_created" | "app_deployment_created" | "job_created" | "job_finished")[];
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppIdWebhooksByWebhookId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                webhookId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    deleteV1AppsByAppIdWebhooksByWebhookId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                webhookId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppIdWebhooksByWebhookId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-                webhookId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    enabled?: boolean;
-                    name?: string;
-                    signingSecret?: string | null;
-                    /** Format: uri */
-                    url?: string;
-                    events?: ("app_build_created" | "app_deployment_created" | "job_created" | "job_finished")[];
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1Apps: {
-        parameters: {
-            query?: {
-                limit?: string;
-                offset?: string;
-                organizationId?: string;
-                query?: string;
-                relations?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    postV1Apps: {
-        parameters: {
-            query?: {
-                organizationId?: string;
-            };
-            header?: never;
-            path?: never;
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    name: string;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1AppsByAppId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    deleteV1AppsByAppId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    patchV1AppsByAppId: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                appId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: {
-            content: {
-                "application/json": {
-                    appChannelDiscoveryEnabled?: boolean;
-                    /** Format: uuid */
-                    appChannelId?: string | null;
-                    /** Format: uuid */
-                    appEnvironmentId?: string | null;
-                    gitRepositoryUrl?: string | null;
-                    name?: string;
-                    nextAppBuildNumber?: number;
-                };
-            };
-        };
-        responses: never;
-    };
-    getV1JobsByJobIdLogs: {
-        parameters: {
-            query?: never;
-            header?: never;
-            path: {
-                jobId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
-    getV1JobsByJobId: {
-        parameters: {
-            query?: {
-                relations?: string;
-            };
-            header?: never;
-            path: {
-                jobId: string;
-            };
-            cookie?: never;
-        };
-        requestBody?: never;
-        responses: never;
-    };
+  getV1AppsByAppIdAutomations: {
+    parameters: {
+      query?: {
+        limit?: string;
+        offset?: string;
+        platform?: "android" | "ios" | "web";
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdAutomations: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          /** Format: uuid */
+          appCertificateId?: string | null;
+          /** Format: uuid */
+          appChannelId?: string | null;
+          /** Format: uuid */
+          appDestinationId?: string | null;
+          /** Format: uuid */
+          appEnvironmentId?: string | null;
+          /** @enum {string|null} */
+          buildStack?: "macos-sequoia" | "macos-tahoe" | null;
+          /** @enum {string|null} */
+          buildType?:
+            | "app-store"
+            | "ad-hoc"
+            | "debug"
+            | "development"
+            | "release"
+            | "simulator"
+            | null;
+          commitMessagePattern?: string | null;
+          name: string;
+          /** @enum {string} */
+          platform: "android" | "ios" | "web";
+          triggerPattern?: string | null;
+          /** @enum {string} */
+          triggerType: "branch" | "tag";
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdAutomationsCount: {
+    parameters: {
+      query?: {
+        platform?: "android" | "ios" | "web";
+        query?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  getV1AppsByAppIdAutomationsByAutomationId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        automationId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  deleteV1AppsByAppIdAutomationsByAutomationId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        automationId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdAutomationsByAutomationId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        automationId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          /** Format: uuid */
+          appCertificateId?: string | null;
+          /** Format: uuid */
+          appChannelId?: string | null;
+          /** Format: uuid */
+          appDestinationId?: string | null;
+          /** Format: uuid */
+          appEnvironmentId?: string | null;
+          /** @enum {string|null} */
+          buildStack?: "macos-sequoia" | "macos-tahoe" | null;
+          /** @enum {string|null} */
+          buildType?:
+            | "app-store"
+            | "ad-hoc"
+            | "debug"
+            | "development"
+            | "release"
+            | "simulator"
+            | null;
+          commitMessagePattern?: string | null;
+          enabled?: boolean;
+          name?: string;
+          /** @enum {string} */
+          platform?: "android" | "ios" | "web";
+          triggerPattern?: string | null;
+          /** @enum {string} */
+          triggerType?: "branch" | "tag";
+        };
+      };
+    };
+    responses: never;
+  };
+  "getV1AppsByAppIdBuild-sourcesByBuildSourceIdDownload": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        buildSourceId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  "postV1AppsByAppIdBuild-sources": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          fileSizeInBytes?: number | null;
+          /** Format: uri */
+          fileUrl?: string | null;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdBuildsByBuildIdArtifactsByArtifactIdDownload: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        buildId: string;
+        artifactId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  getV1AppsByAppIdBuildsByBuildIdArtifacts: {
+    parameters: {
+      query?: {
+        limit?: string;
+        offset?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        buildId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  getV1AppsByAppIdBuilds: {
+    parameters: {
+      query?: {
+        appAutomationId?: string;
+        limit?: string;
+        offset?: string;
+        numberAsString?: string;
+        platform?: "android" | "ios" | "web";
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdBuilds: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          adHocEnvironmentVariables?: {
+            [key: string]: string;
+          } | null;
+          appBuildSourceId?: string | null;
+          appCertificateId?: string | null;
+          appCertificateName?: string | null;
+          appEnvironmentId?: string | null;
+          appEnvironmentName?: string | null;
+          gitRef?: string | null;
+          /** @enum {string} */
+          platform: "android" | "ios" | "web";
+          /**
+           * @default macos-tahoe
+           * @enum {string}
+           */
+          stack?: "macos-sequoia" | "macos-tahoe";
+          /** @enum {string|null} */
+          type?: "app-store" | "ad-hoc" | "debug" | "development" | "release" | "simulator" | null;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdBuildsByBuildId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        buildId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdBuildsByBuildId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        buildId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          customProperties?: {
+            [key: string]: string;
+          } | null;
+          eqAndroidAppVersionCode?: string | null;
+          eqIosAppVersionCode?: string | null;
+          maxAndroidAppVersionCode?: string | null;
+          maxIosAppVersionCode?: string | null;
+          minAndroidAppVersionCode?: string | null;
+          minIosAppVersionCode?: string | null;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdBundlesLatest: {
+    parameters: {
+      query: {
+        appVersionCode: string;
+        appVersionName: string;
+        bundleId?: string;
+        channelName?: string;
+        customId?: string;
+        deviceId: string;
+        osVersion: string;
+        platform: string;
+        pluginVersion: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  getV1AppsByAppIdBundlesByBundleIdDownload: {
+    parameters: {
+      query?: {
+        href?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        bundleId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  getV1AppsByAppIdCertificates: {
+    parameters: {
+      query?: {
+        limit?: string;
+        name?: string;
+        offset?: string;
+        platform?: "android" | "ios" | "web";
+        type?: "development" | "production";
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdCertificates: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/x-www-form-urlencoded": {
+          file: unknown;
+          keyAlias?: string;
+          keyPassword?: string;
+          name: string;
+          password?: string;
+          /** @enum {string} */
+          platform: "android" | "ios" | "web";
+          /** @enum {string} */
+          type?: "development" | "production";
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdCertificatesByCertificateId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        certificateId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  deleteV1AppsByAppIdCertificatesByCertificateId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        certificateId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdCertificatesByCertificateId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        certificateId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          keyAlias?: string | null;
+          keyPassword?: string | null;
+          name?: string;
+          password?: string;
+          /** @enum {string} */
+          type?: "development" | "production";
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdChannels: {
+    parameters: {
+      query?: {
+        limit?: string;
+        name?: string;
+        offset?: string;
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdChannels: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          expiresAt?: string | number | null;
+          name: string;
+          protected?: boolean;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdChannelsByChannelId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        channelId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  deleteV1AppsByAppIdChannelsByChannelId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        channelId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdChannelsByChannelId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        channelId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          expiresAt?: string | number | null;
+          name?: string;
+          protected?: boolean;
+        };
+      };
+    };
+    responses: never;
+  };
+  postV1AppsByAppIdChannelsByChannelIdPause: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        channelId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdChannelsByChannelIdResume: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        channelId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  getV1AppsByAppIdDeployments: {
+    parameters: {
+      query?: {
+        appBuildId?: string;
+        appChannelId?: string;
+        appDestinationId?: string;
+        limit?: string;
+        offset?: string;
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdDeployments: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          appBuildId: string;
+          appChannelId?: string | null;
+          appChannelName?: string | null;
+          appDestinationId?: string | null;
+          appDestinationName?: string | null;
+          rolloutPercentage?: number | null;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdDeploymentsByDeploymentId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        deploymentId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdDeploymentsByDeploymentId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        deploymentId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          rolloutPercentage: number;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdDestinations: {
+    parameters: {
+      query?: {
+        limit?: string;
+        name?: string;
+        offset?: string;
+        platform?: "android" | "ios";
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdDestinations: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          /**
+           * @default aab
+           * @enum {string}
+           */
+          androidBuildArtifactType?: "aab" | "apk";
+          androidPackageName?: string | null;
+          /**
+           * @default draft
+           * @enum {string}
+           */
+          androidReleaseStatus?: "completed" | "draft";
+          appAppleApiKeyId?: string | null;
+          appGoogleServiceAccountKeyId?: string | null;
+          appleApiKeyId?: string | null;
+          appleIssuerId?: string | null;
+          appleId?: string | null;
+          appleAppPassword?: string | null;
+          appleAppId?: string | null;
+          appleTeamId?: string | null;
+          /** @enum {string|null} */
+          googlePlayTrack?: "internal" | "alpha" | "beta" | "production" | null;
+          name: string;
+          /** @enum {string} */
+          platform: "android" | "ios";
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdDestinationsByDestinationId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        destinationId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  deleteV1AppsByAppIdDestinationsByDestinationId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        destinationId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdDestinationsByDestinationId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        destinationId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          /** @enum {string} */
+          androidBuildArtifactType?: "aab" | "apk";
+          androidPackageName?: string | null;
+          /** @enum {string} */
+          androidReleaseStatus?: "completed" | "draft";
+          appAppleApiKeyId?: string | null;
+          appGoogleServiceAccountKeyId?: string | null;
+          appleApiKeyId?: string | null;
+          appleIssuerId?: string | null;
+          appleId?: string | null;
+          appleAppPassword?: string | null;
+          appleAppId?: string | null;
+          appleTeamId?: string | null;
+          /** @enum {string|null} */
+          googlePlayTrack?: "internal" | "alpha" | "beta" | "production" | null;
+          name?: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdDevices: {
+    parameters: {
+      query?: {
+        id?: string;
+        limit?: string;
+        offset?: string;
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  getV1AppsByAppIdDevicesByDeviceId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        deviceId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  deleteV1AppsByAppIdDevicesByDeviceId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        deviceId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdDevicesByDeviceId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        deviceId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          /** Format: uuid */
+          forcedAppChannelId?: string | null;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdEnvironmentsByEnvironmentIdSecrets: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdEnvironmentsByEnvironmentIdSecrets: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          key: string;
+          value: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  deleteV1AppsByAppIdEnvironmentsByEnvironmentIdSecretsBySecretId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+        secretId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdEnvironmentsByEnvironmentIdSecretsBySecretId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+        secretId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          key?: string;
+          value?: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdEnvironmentsByEnvironmentIdVariables: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdEnvironmentsByEnvironmentIdVariables: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          key: string;
+          value: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  deleteV1AppsByAppIdEnvironmentsByEnvironmentIdVariablesByVariableId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+        variableId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdEnvironmentsByEnvironmentIdVariablesByVariableId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+        variableId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          key?: string;
+          value?: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdEnvironments: {
+    parameters: {
+      query?: {
+        limit?: string;
+        offset?: string;
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdEnvironments: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          name: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdEnvironmentsByEnvironmentId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdEnvironmentsByEnvironmentId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        environmentId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          name?: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  postV1AppsByAppIdTransfer: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          targetOrganizationId: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdWebhooks: {
+    parameters: {
+      query?: {
+        limit?: string;
+        offset?: string;
+        query?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1AppsByAppIdWebhooks: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          name: string;
+          signingSecret?: string;
+          /** Format: uri */
+          url: string;
+          events: (
+            | "app_build_created"
+            | "app_deployment_created"
+            | "job_created"
+            | "job_finished"
+          )[];
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppIdWebhooksByWebhookId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        webhookId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  deleteV1AppsByAppIdWebhooksByWebhookId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        webhookId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppIdWebhooksByWebhookId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+        webhookId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          enabled?: boolean;
+          name?: string;
+          signingSecret?: string | null;
+          /** Format: uri */
+          url?: string;
+          events?: (
+            | "app_build_created"
+            | "app_deployment_created"
+            | "job_created"
+            | "job_finished"
+          )[];
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1Apps: {
+    parameters: {
+      query?: {
+        limit?: string;
+        offset?: string;
+        organizationId?: string;
+        query?: string;
+        relations?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  postV1Apps: {
+    parameters: {
+      query?: {
+        organizationId?: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          name: string;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1AppsByAppId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  deleteV1AppsByAppId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  patchV1AppsByAppId: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        appId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: {
+      content: {
+        "application/json": {
+          appChannelDiscoveryEnabled?: boolean;
+          /** Format: uuid */
+          appChannelId?: string | null;
+          /** Format: uuid */
+          appEnvironmentId?: string | null;
+          gitRepositoryUrl?: string | null;
+          name?: string;
+          nextAppBuildNumber?: number;
+        };
+      };
+    };
+    responses: never;
+  };
+  getV1JobsByJobIdLogs: {
+    parameters: {
+      query?: never;
+      header?: never;
+      path: {
+        jobId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  getV1JobsByJobId: {
+    parameters: {
+      query?: {
+        relations?: string;
+      };
+      header?: never;
+      path: {
+        jobId: string;
+      };
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
 }
