@@ -17,12 +17,12 @@
     "build": "obuild",
     "dev": "vitest dev",
     "fmt": "automd && oxlint . --fix && oxfmt .",
+    "generate:types": "openapi-typescript https://api.cloud.capawesome.io/openapi -o src/types/capawesome.ts",
     "lint": "oxlint . && oxfmt --check .",
     "prepack": "pnpm build",
     "release": "pnpm test && pnpm build && changelogen --release && npm publish && git push --follow-tags",
     "test": "pnpm lint && pnpm typecheck && vitest run --coverage",
-    "typecheck": "tsgo --noEmit --skipLibCheck",
-    "generate:types": "openapi-typescript https://api.cloud.capawesome.io/openapi -o src/types/capawesome.ts"
+    "typecheck": "tsgo --noEmit --skipLibCheck"
   },
   "dependencies": {
     "ofetch": "^1.5.1"
@@ -40,5 +40,5 @@
     "typescript": "latest",
     "vitest": "latest"
   },
-  "packageManager": "pnpm@10.29.3"
+  "packageManager": "pnpm@10.33.0"
 }
