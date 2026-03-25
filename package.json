@@ -21,7 +21,8 @@
     "prepack": "pnpm build",
     "release": "pnpm test && pnpm build && changelogen --release && npm publish && git push --follow-tags",
     "test": "pnpm lint && pnpm typecheck && vitest run --coverage",
-    "typecheck": "tsgo --noEmit --skipLibCheck"
+    "typecheck": "tsgo --noEmit --skipLibCheck",
+    "generate:types": "openapi-typescript https://api.cloud.capawesome.io/openapi -o src/types/capawesome.ts"
   },
   "dependencies": {
     "ofetch": "^1.5.1"
