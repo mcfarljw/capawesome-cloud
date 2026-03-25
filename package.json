@@ -23,6 +23,9 @@
     "test": "pnpm lint && pnpm typecheck && vitest run --coverage",
     "typecheck": "tsgo --noEmit --skipLibCheck"
   },
+  "dependencies": {
+    "ofetch": "^1.5.1"
+  },
   "devDependencies": {
     "@types/node": "latest",
     "@typescript/native-preview": "latest",
@@ -36,8 +39,5 @@
     "typescript": "latest",
     "vitest": "latest"
   },
-  "packageManager": "pnpm@10.29.3",
-  "dependencies": {
-    "ofetch": "^1.5.1"
-  }
+  "packageManager": "pnpm@10.29.3"
 }
