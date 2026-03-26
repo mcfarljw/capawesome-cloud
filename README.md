@@ -1,9 +1,9 @@
-# packageName
+# @mcfarljw/capawesome-cloud
 
 <!-- automd:badges color=yellow -->
 
-[![npm version](https://img.shields.io/npm/v/packageName?color=yellow)](https://npmjs.com/package/packageName)
-[![npm downloads](https://img.shields.io/npm/dm/packageName?color=yellow)](https://npm.chart.dev/packageName)
+[![npm version](https://img.shields.io/npm/v/mcfarljw/capawesome-cloud?color=yellow)](https://npmjs.com/package/mcfarljw/capawesome-cloud)
+[![npm downloads](https://img.shields.io/npm/dm/mcfarljw/capawesome-cloud?color=yellow)](https://npm.chart.dev/mcfarljw/capawesome-cloud)
 
 <!-- /automd -->
 
@@ -12,14 +12,14 @@
 Install the package:
 
 ```sh
-npx nypm install packageName
+npx nypm install @mcfarljw/capawesome-cloud
 
 ```
 
 Create a client:
 
 ```ts
-import { createCapawesomeClient } from "packageName";
+import { createCapawesomeClient } from "@mcfarljw/capawesome-cloud";
 
 const client = createCapawesomeClient({
   token: process.env.CAPAWESOME_TOKEN,
@@ -76,4 +76,4 @@ const builds = await client.request("get", "/v1/apps/{appId}/builds", {
 
 ## License
 
-Published under the [MIT](https://github.com/unjs/packageName/blob/main/LICENSE) license 💛.
+Published under the [MIT](https://github.com/mcfarljw/capawesome-cloud/blob/main/LICENSE) license 💛.
