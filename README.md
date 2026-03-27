@@ -2,8 +2,8 @@
 
 <!-- automd:badges color=yellow -->
 
-[![npm version](https://img.shields.io/npm/v/mcfarljw/capawesome-cloud?color=yellow)](https://npmjs.com/package/mcfarljw/capawesome-cloud)
-[![npm downloads](https://img.shields.io/npm/dm/mcfarljw/capawesome-cloud?color=yellow)](https://npm.chart.dev/mcfarljw/capawesome-cloud)
+[![npm version](https://img.shields.io/npm/v/@mcfarljw/capawesome-cloud?color=yellow)](https://npmjs.com/package/@mcfarljw/capawesome-cloud)
+[![npm downloads](https://img.shields.io/npm/dm/@mcfarljw/capawesome-cloud?color=yellow)](https://npm.chart.dev/@mcfarljw/capawesome-cloud)
 
 <!-- /automd -->
 
