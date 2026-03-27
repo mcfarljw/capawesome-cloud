@@ -1,6 +1,6 @@
 {
   "name": "@mcfarljw/capawesome-cloud",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A typed API client for the Capawesome Cloud",
   "license": "MIT",
   "repository": "mcfarljw/capawesome-cloud",
