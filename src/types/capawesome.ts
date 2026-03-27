@@ -956,12 +956,15 @@ export interface operations {
           customProperties?: {
             [key: string]: string;
           } | null;
+          displayName?: string | null;
           eqAndroidAppVersionCode?: string | null;
           eqIosAppVersionCode?: string | null;
           maxAndroidAppVersionCode?: string | null;
           maxIosAppVersionCode?: string | null;
           minAndroidAppVersionCode?: string | null;
           minIosAppVersionCode?: string | null;
+          packageName?: string | null;
+          packageVersion?: string | null;
         };
       };
     };
