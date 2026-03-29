@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v0.1.1
+
+[compare changes](https://github.com/mcfarljw/capawesome-cloud/compare/v0.1.0...v0.1.1)
+
+### 📖 Documentation
+
+- Update npm badge and package link in README.md ([65c6c2a](https://github.com/mcfarljw/capawesome-cloud/commit/65c6c2a))
+
+### 🏡 Chore
+
+- **release:** V0.1.0 ([d6b80c5](https://github.com/mcfarljw/capawesome-cloud/commit/d6b80c5))
+- Update types ([05ce7c5](https://github.com/mcfarljw/capawesome-cloud/commit/05ce7c5))
+- Update dependencies ([f385d73](https://github.com/mcfarljw/capawesome-cloud/commit/f385d73))
+
+### ❤️ Contributors
+
+- Joshua McFarland ([@mcfarljw](https://github.com/mcfarljw))
+
 ## v0.1.0
 
 
