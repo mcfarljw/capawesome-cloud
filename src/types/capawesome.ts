@@ -611,6 +611,57 @@ export interface paths {
     patch: operations["patchV1AppsByAppId"];
     trace?: never;
   };
+  "/v1/ios-manifest-plist": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** @description Generate a manifest.plist for iOS OTA distribution. */
+    get: operations["getV1Ios-manifest-plist"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/ios-udid-profile": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    /** @description Generate a .mobileconfig profile for iOS UDID retrieval via the OTA Profile Service mechanism. */
+    get: operations["getV1Ios-udid-profile"];
+    put?: never;
+    post?: never;
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
+  "/v1/ios-udid-profile/receive": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    get?: never;
+    put?: never;
+    /** @description Receive a PKCS#7 signed plist from iOS containing device attributes and redirect to the callback URL. */
+    post: operations["postV1Ios-udid-profileReceive"];
+    delete?: never;
+    options?: never;
+    head?: never;
+    patch?: never;
+    trace?: never;
+  };
   "/v1/jobs/{jobId}/logs": {
     parameters: {
       query?: never;
@@ -1885,6 +1936,43 @@ export interface operations {
         };
       };
     };
+    responses: never;
+  };
+  "getV1Ios-manifest-plist": {
+    parameters: {
+      query: {
+        displayName: string;
+        packageName: string;
+        packageVersion: string;
+        url: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  "getV1Ios-udid-profile": {
+    parameters: {
+      query: {
+        callbackUrl: string;
+      };
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
+    responses: never;
+  };
+  "postV1Ios-udid-profileReceive": {
+    parameters: {
+      query?: never;
+      header?: never;
+      path?: never;
+      cookie?: never;
+    };
+    requestBody?: never;
     responses: never;
   };
   getV1JobsByJobIdLogs: {
