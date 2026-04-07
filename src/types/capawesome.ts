@@ -1749,7 +1749,7 @@ export interface operations {
     requestBody?: {
       content: {
         "application/json": {
-          targetOrganizationId: string;
+          organizationId: string;
         };
       };
     };
